@@ -50,7 +50,7 @@ ax.text(0, 1.09, 'The 8 social media platforms with the most users between 2010 
 ax.text(0, 0, 'Source: Our World in Data', transform=ax.transAxes, fontsize=5, alpha=0.5)
 fig.set_facecolor('#ecf0f1')
 ```
-# ![](examples/styled.png)
+
 <picture>
   <img alt="Image Alt Text" src="examples/styled.png">
 </picture>
