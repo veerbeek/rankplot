@@ -24,14 +24,7 @@ ax.set_title('The most popular social media platforms', y=1.05)
 ```
 ![](examples/basic.png)
 
-### Usage
 
-```python
-rankplot(data=None, labels=None,
-    y_labels=None, color=None, color_map=None, grey_color='grey',
-    trim=True, show_vals=True, hspace=0, vspace=0, labelpad=0, 
-    label_fontsize=5, tick_fontsize=6, ax=None) 
-```
 
 ### 2. Example with styling
 
@@ -56,6 +49,15 @@ ax.text(0, 1.09, 'The 8 social media platforms with the most users between 2010 
         transform=ax.transAxes,  fontsize=8)
 ax.text(0, 0, 'Source: Our World in Data', transform=ax.transAxes, fontsize=5, alpha=0.5)
 fig.set_facecolor('#ecf0f1')
+```
+
+### Usage
+
+```python
+rankplot(data=None, labels=None,
+    y_labels=None, color=None, color_map=None, grey_color='grey',
+    trim=True, show_vals=True, hspace=0, vspace=0, labelpad=0, 
+    label_fontsize=5, tick_fontsize=6, ax=None) 
 ```
 
 #### Parameters
