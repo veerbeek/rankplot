@@ -1,2 +1,2 @@
-# Mininal ranking plot/bump chart
+# Mininal ranking plot
 
