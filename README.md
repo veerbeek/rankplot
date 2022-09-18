@@ -8,10 +8,8 @@ def rankplot(
     data=None, labels=None,
     y_labels=None, color=None, color_map=None, grey_color='grey',
     trim=True, show_vals=True, hspace=0, vspace=0, labelpad=0, 
-    label_fontsize=5, tick_fontsize=6, ax=None):
-    
+    label_fontsize=5, tick_fontsize=6, ax=None) 
 ```
-
 
 
 ### 1. Minimal example
