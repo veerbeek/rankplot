@@ -1,7 +1,7 @@
 # Minimal ranking plot
 
 
-### Usage
+## Usage
 
 ```python
 def rankplot(    
@@ -11,6 +11,7 @@ def rankplot(
     label_fontsize=5, tick_fontsize=6, ax=None) 
 ```
 
+#### Parameters
 
 ### 1. Minimal example
 
