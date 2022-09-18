@@ -1,2 +1,2 @@
-# rankplot
-minimal ranking plot
+# Mininal ranking plot/bump chart
+
