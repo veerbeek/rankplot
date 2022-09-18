@@ -4,6 +4,8 @@
 ### 1. Minimal example
 
 ```python
+import matplotlib.pyplot as plt
+from rankplot import rankplot
 data = {2010: {'Facebook': 517750000, 'YouTube': 480551990, 'Google Buzz': 166029650, 'MySpace': 68046710, 'Hi5': 59953290, 'Flickr': 54708063, 'Orkut': 49941613, 'Twitter': 43250000}, 
         2011: {'Facebook': 766000000, 'YouTube': 642669824, 'Google Buzz': 170000000, 'Twitter': 92750000, 'Flickr': 66954600, 'Weibo': 48691040, 'WeChat': 47818400, 'Orkut': 47609080}, 
         2012: {'Facebook': 979750000, 'YouTube': 844638200, 'Google Buzz': 170000000, 'Twitter': 160250000, 'Tumblr': 146890156, 'WeChat': 118123370, 'Google+': 107319100, 'Flickr': 79664888}, 
