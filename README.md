@@ -21,7 +21,7 @@ rankplot(data=None, labels=None,
 
 #### Parameters
 
-- `data`
+- `data` (list or dict): Data for the ranking. 
 - `labels`
 - `y_labels`
 - `color`
