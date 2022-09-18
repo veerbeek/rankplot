@@ -13,6 +13,21 @@ def rankplot(
 
 #### Parameters
 
+- `data`
+- `labels`
+- `y_labels`
+- `color`
+- `color_map`
+- `grey_color`
+- `trim`
+- `show_vals`
+- `hspace`
+- `vspace`
+- `labelpad`
+- `label_fontsize`
+- `tick_fontsize`
+- `ax`
+
 ### 1. Minimal example
 
 ```python
