@@ -33,6 +33,31 @@ rankplot(data=None, labels=None,
     label_fontsize=5, tick_fontsize=6, ax=None) 
 ```
 
+### 2. Example with styling
+
+```python
+plt.rcParams['font.family'] = 'PT Sans'
+
+custom_color_map = {'Facebook' : '#2980b9',
+                    'YouTube': '#e74c3c', 
+                   'Whatsapp': '#16a085', 
+                   'WeChat': '#2ecc71', 
+                   'Tumblr': '#2c3e50',
+                   'Instagram': '#c0392b',
+                   'TikTok': '#34495e',
+                   'Weibo': '#d35400'}
+
+fig, ax = plt.subplots(figsize=(6,3), dpi=150)
+
+ax = rankplot(data, label_fontsize=4.5, hspace=2, vspace=-1, ax=ax, 
+              grey_color='#95a5a6', color_map=custom_color_map)
+ax.set_title('Facebook\'s continuing dominance', y=1.12, x=0, ha='left', weight='bold')
+ax.text(0, 1.09, 'The 8 social media platforms with the most users between 2010 and 2018',
+        transform=ax.transAxes,  fontsize=8)
+ax.text(0, 0, 'Source: Our World in Data', transform=ax.transAxes, fontsize=5, alpha=0.5)
+fig.set_facecolor('#ecf0f1')
+```
+
 #### Parameters
 - data (`list` or `dict`): The ranking data. Can be a list of dicts with the label as key (`[{"John": 2, "Ali": 5}]`),
 a nested dictionary with the column label as key (`{'2010': {'John': 2, 'Ali': 2}}`) or a 2D array (`[[2, 5]]`).   
