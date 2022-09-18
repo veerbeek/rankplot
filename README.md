@@ -1,7 +1,16 @@
 # Minimal ranking plot
 
 
-## Usage
+### 1. Minimal example
+
+```python
+fig, ax = plt.subplots()
+ax = rankplot(data, ax=ax)
+ax.set_title('The most popular social media platforms', y=1.05)
+```
+![](examples/basic.png)
+
+### Usage
 
 ```python
 rankplot(data=None, labels=None,
@@ -26,12 +35,3 @@ rankplot(data=None, labels=None,
 - `label_fontsize`
 - `tick_fontsize`
 - `ax`
-
-### 1. Minimal example
-
-```python
-fig, ax = plt.subplots()
-ax = rankplot(data, ax=ax)
-ax.set_title('The most popular social media platforms', y=1.05)
-```
-![](examples/basic.png)
