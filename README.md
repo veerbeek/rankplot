@@ -21,7 +21,8 @@ rankplot(data=None, labels=None,
 
 #### Parameters
 
-- `data` (list or dict): Data for the ranking. 
+- data (`list` or `dict`): The ranking data. Can be a list of dicts with the label as key (`[{"John": 2, "Ali": 5}]`),
+         a nested dictionary with the column label as key `{'2010': {'John': 2, 'Ali': 2}}` or a 2D array (`[[2, 5]]`). 
 - `labels`
 - `y_labels`
 - `color`
