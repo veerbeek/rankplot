@@ -35,18 +35,25 @@ rankplot(data=None, labels=None,
 
 #### Parameters
 
-- **data** (`list` or `dict`) — The ranking data. Can be a list of dicts with the label as key (`[{"John": 2, "Ali": 5}]`),
-         a nested dictionary with the column label as key `{'2010': {'John': 2, 'Ali': 2}}` or a 2D array (`[[2, 5]]`). 
-- `labels`
-- `y_labels`
-- `color`
-- `color_map`
-- `grey_color`
-- `trim`
-- `show_vals`
-- `hspace`
-- `vspace`
-- `labelpad`
-- `label_fontsize`
-- `tick_fontsize`
-- `ax`
+       - data (`list` or `dict`): The ranking data. Can be a list of dicts with the label as key (`[{"John": 2, "Ali": 5}]`),
+         a nested dictionary with the column label as key (`{'2010': {'John': 2, 'Ali': 2}}`) or a 2D array (`[[2, 5]]`).   
+        - labels (list, *optional*): 2D array in the same shape of the data, containing the labels. Mainly useful when the 
+         input is a 2D array, otherwise labels are already extracted from the data. Defaults to None.
+        - y_labels (list, *optional*): Labels for the columns. Already extracted when the input is a nested 
+         dictionary. Defaults to None.
+        - color (list or str, *optional*): The color(s) of the boxes. If one color is provided, all boxes 
+         will get the same colors. If multiple colors are provided, the most frequent labels
+          will be assigned a color. Defaults to None.
+        - color_map (dict, *optional*): Dictionary that allows for a custom mapping of labels to 
+         specific colors. Overwrites the input of the color parameter. Defaults to None.
+        - grey_color (str, *optional*): Color for the labels that aren't included in color_map. Defaults to 'grey'.
+        - trim (bool, *optional*): Puts the last word of the label on a new line if the string if 
+         wider than the box. Defaults to True.
+        - show_vals (bool, *optional*): Display the values in the box. Defaults to True.
+        - hspace (int, *optional*): Spacing between rows. Defaults to 0.
+        - vspace (int, *optional*): Spacing between columns. Defaults to 0.
+        - labelpad (int, *optional*): Spacing from the boxes to tick labels. Defaults to 0.
+        - label_fontsize (int, *optional*): Fontsize of the box labels. Defaults to 5.
+        - tick_fontsize (int, *optional*): Fontsize of the column labels. Defaults to 6.
+       -  ax (*matplotlib axes object*, *optional*): An axes of the current figure. Defaults to None.
+
